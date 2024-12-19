@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const SECRET_KEY = "AadityaSumitSatyamShrutiShubhangi";
+const SECRET_KEY = "";
 
 const generateToken = (user) => {
   return jwt.sign({ id: user._id, role: user.role }, SECRET_KEY, {
